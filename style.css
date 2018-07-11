@@ -1,0 +1,42 @@
+.row{   
+
+    background-color:white;
+    color:blue;
+    font-size:20px;
+    display:flex;
+    font-family: 'Knewave', cursive;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.headshot{
+    width:20%;
+    border-radius: 50%;
+   
+}
+.mid{
+    background-color:white;
+    color:black;
+    align-items:center;
+    font-size:50px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.aboutme{
+    border:1px solid black;   
+}
+
+.name {
+ font-size: 23px;   
+}
+
+.social {
+    height: 60px;
+    
+}
+
+p {
+   
+}
+}
