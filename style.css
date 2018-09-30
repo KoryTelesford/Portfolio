@@ -1,52 +1,84 @@
-.row{   
-
-    background-color:white;
-    color:blue;
-    font-size:20px;
-    display:flex;
-    font-family: 'Knewave', cursive;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-.headshot{
-    width:20%;
-    border-radius: 50%;
-   
-}
-.mid{
-    background-color:white;
-    color:black;
-    align-items:center;
-    font-size:50px;
-    margin-top:5px;
-    margin-bottom:5px;
-
-}
-.aboutme{
-    border:1px solid black;   
+ /* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
 }
 
-.name {
- font-size: 23px;   
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  font-family: 'Poiret One', cursive;
 }
 
-.social {
-    height: 60px;
-    
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header logo {
+  font-size: 25px;
+  font-weight: bold;
 }
 
-p {
-   font-family: 'Indie Flower', cursive;
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #aaaaaa;
+  color: white;
 }
 
-a {
- font-family: 'Indie Flower', cursive;
+/* Style the active/current link*/
+.header active {
+  background-color: #3c80bc;
+  color: white;
 }
 
-h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 50;
+/* Float the link section to the right */
+.header-right {
+  float: right;
 }
 
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* Body */
+
+body {
+    background-image: url("http://getwallpapers.com/wallpaper/full/0/8/c/391956.jpg");
+    background-size: cover;
+}
+
+.bg-text {
+  color: #f2f3f4;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 27px;
+}
+
+p2 {
+ color: white;
+ font-size: 20px;
+ font-family: 'Josefin Slab', serif;
+}
